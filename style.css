@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #daa520;
+}
+/* 
+======================
+---- Navigation ----
+====================== 
+*/
+.navigation {
+  display: flex;
+  position: fixed;
+  font-size: 2rem;
+  background-color: black;
+  width: 100%;
+  margin: 0 auto;
+  height: 5rem;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 2;
+}
+.logo {
+  text-shadow: 2px 2px 1px gray;
+  text-transform: capitalize;
+}
+.logo span {
+  color: white;
+}
+.features li a {
+  color: #daa520;
+  transition: all 0.3s ease-in-out;
+}
+.features li a:hover {
+  color: white;
+}
+/* 
+======================
+---- Motivational Poster ----
+====================== 
+*/
+.container {
+  width: 50%;
+  margin-left: 25%;
+  padding-top: 100px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.mountain-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border: 5px solid white;
+}
+h1 {
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0.8rem;
+  font-size: 4rem;
+}
+p {
+  font-size: 1.5rem;
+}
+
+.author {
+  margin-top: 2rem;
+  transform: translateX(15%);
+}
+/* 
+======================
+---- Projects ----
+====================== 
+*/
+#products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8d99b;
+  text-align: center;
+  height: 100vh;
+  color: black;
+}
+.products-h2 {
+  margin-top: 100px;
+  font-size: 2.5rem;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90vw;
+  margin: auto;
+}
+.card-project {
+  width: 280px;
+  height: 350px;
+  background-color: #e5dfd4;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  box-shadow: 5px 5px 5px rgb(126, 96, 60);
+}
+
+.card-project h2 {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.card-project p {
+  font-size: 1.2rem;
+  color: #857f7f;
+}
+.card-project:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.btn {
+  margin-top: 30px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  background-color: darkorange;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.testimonials {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+/* 
+======================
+---- Evolution ----
+====================== 
+*/
+.about {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(248, 217, 155);
+}
+
+.evolution img {
+  width: 130px;
+  margin: 1rem auto;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.container-image {
+  margin: 300px auto;
+  text-align: center;
+}
+.evolution img:hover {
+  transform: translateY(-15px);
+}
+ul {
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  width: 160px;
+  position: relative;
+}
+ul li a {
+  color: darkorange;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: blue;
+}
+
+ul li p::after {
+  content: "";
+  background-color: white;
+  margin-top: 1rem;
+  height: 15px;
+  width: 170px;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+.number {
+  background-color: white;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  position: absolute;
+  left: 50px;
+  align-items: center;
+  justify-content: center;
+}
+ul li:nth-child(odd) .number {
+  background-color: darkorange;
+  color: black;
+}
+
+ul li:nth-child(odd) p::after {
+  background-color: darkorange;
+}
+ul li:nth-child(even) .number {
+  background-color: rgb(109, 90, 56) white;
+}
+ul li:first-child p::after {
+  width: 90px;
+  left: 80px;
+}
+ul li:last-child p::after {
+  width: 90px;
+}
+/* 
+======================
+---- Testimonials ----
+====================== 
+*/
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+}
+.center h2 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+.testimonial-subject {
+  display: flex;
+}
+.photo img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  padding-right: 2rem;
+}
+.details {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: left;
+}
+/* 
+======================
+---- Contact ----
+====================== 
+*/
+.form {
+  height: 300px;
+}
+.input {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+.submit:hover {
+  background-color: darkgrey;
+  color: darkorange;
+}
+/* 
+======================
+---- Footer ----
+====================== 
+*/
+.footer {
+  text-align: center;
+  padding: 3rem;
+}
